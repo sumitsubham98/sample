@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Form Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+                width:30%;
+                border:1px solid black;
+                
+                padding:20px;
+                font-size: 20px;
+            }
+        
+           #myform table tr td input
+                  {
+                     font-size:20px;
+                  }
+        </style>
+    </head>
+    <body>
+        
+        
+       <div class="container" >   
+         <h1>Registration Form</h1>
+         <form id="myform" action="register" method="post">    
+           <table >
+           
+              <tr>
+              <td><label for="name">Enter your name:</label></td>
+              <td><input type="text" id="name" name="name" placeholder="Enter here" ></td>
+              </tr>
+              <tr>
+                 <td><label for="email">Enter your mail:</label></td>
+                 <td><input type="email" id="email" name="email" placeholder="Enter here" ></td>
+              </tr>
+              <tr>
+                 <td><label for="password">Enter your password:</label></td>
+                 <td><input type="password" id="password" name="password" placeholder="Enter here" ></td>
+              </tr>
+              <tr>
+                 <td><label for="gender">Select Gender:</label></td>
+                 <td><input type="radio" id="male" name="gender" value="male" ><label for="male" >Male</label><input type="radio" id="female" name="gender" value="female" ><label for="female" >Female</label></td>
+              </tr>
+              <tr>
+                 <td><label for="name">Select your course:</label></td>
+                 <td>  
+                     <select name="user_course">
+                         <option value="java">Java</option>
+                         <option value="python">Python</option>
+                         <option value="c">C</option>
+                         <option value="c++">C++</option>
+                         <option value="android">Android</option>
+                     </select>
+                 </td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td><input type="checkbox" id="cond" name="cond" value="agree">
+                      <label for="cond">Agree term and condition</label>
+                  </td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td><input type="submit" value="Submit"><input type="submit" value="Login" formaction="login.html">
+                  <input type="submit" value="Admin" formaction="AdminFetching"></td>
+              </tr>
+           </table>
+         </form>
+      </div>
+    </body>
+</html>
